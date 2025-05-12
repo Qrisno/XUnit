@@ -61,4 +61,24 @@ public class InsuranceTest
         var age = 2;
         Assert.Throws<InvalidDataContractException>(()=>insurance.GetDiscountPercentage(age));
     }
+
+    [Fact]
+    public void CreateCustomer_GivenCompanyYear2_ReturnsNormalCustomer()
+    {
+        var insurance = new Insurance();
+        var customer = CustomerFactory.CreateCustomer(2, 65);
+        
+        Assert.IsType<Customer>(customer);
+        Assert.Equal(5, customer.Discount);
+    }
+    
+    [Fact]
+    public void CreateCustomer_GivenCompanyYear10_ReturnsLoyalCustomer()
+    {
+        var insurance = new Insurance();
+        var customer = CustomerFactory.CreateCustomer(10, 65);
+        
+        Assert.IsType<LoyalCustomer>(customer);
+        Assert.Equal(15, customer.Discount);
+    }
 }

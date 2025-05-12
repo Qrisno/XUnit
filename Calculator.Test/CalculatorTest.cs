@@ -1,12 +1,14 @@
 ﻿namespace Calculator.Test;
 
-public class CalculatorTest
+public class CalculatorTest(ITestOutputHelper outputHelper)
 {
     
     //Naming Convention MethodName_Predicate_ExpectedResult
     [Fact]
+    [Trait("Calculator", "Ops")]
     public void Add_Given1And2_Returns3()
     {
+        outputHelper.WriteLine("Executed");
         //Arrange - Create Instance of the class
         var calculator = new Calculator();
         //Act
@@ -16,6 +18,7 @@ public class CalculatorTest
     }
 
     [Fact]
+    [Trait("Calculator", "Ops")]
     public void Add_GivenTwoDecimals_ReturnsSumWithTwoPlaces()
     {
         //Arrange
@@ -29,6 +32,7 @@ public class CalculatorTest
     }
 
     [Fact]
+    [Trait("Calculator", "Fibo")]
     public void GetFibonacci_GivenLengthOf3_ReturnsArrayWith3Elements()
     {
         //Arrange
@@ -40,6 +44,7 @@ public class CalculatorTest
     }
 
     [Fact]
+    [Trait("Calculator", "Fibo")]
     public void GetFibonacci_NotIncludes0()
     {
         //Arrange
@@ -51,6 +56,7 @@ public class CalculatorTest
     }
     
     [Fact]
+    [Trait("Calculator", "Fibo")]
     public void GetFibonacci_NotIncludes4()
     {
         //Arrange
@@ -62,6 +68,7 @@ public class CalculatorTest
     }
     
     [Fact]
+    [Trait("Calculator", "Fibo")]
     public void GetFibonacci_FirstFiveMembersAreCorrect()
     {
         //Arrange
