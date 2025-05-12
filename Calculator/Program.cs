@@ -1,3 +1,5 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-Console.WriteLine("Hello, World!");
+var calculator=new Calculator.Calculator();
+
+var value = calculator.GetFibonacci(3);

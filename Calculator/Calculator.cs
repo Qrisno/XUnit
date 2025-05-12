@@ -11,4 +11,20 @@ public class Calculator
     {
         return a + b;
     }
+
+    public IEnumerable<int> GetFibonacci(int length)
+    {
+        int first = 1;
+        int second = 1;
+        yield return first;
+        yield return second;
+        for (int i =0; i < length-2;i++)
+        {
+            var next =  first + second;
+            first = second;
+            second = next;
+            yield return next;
+        }
+        
+    }
 }

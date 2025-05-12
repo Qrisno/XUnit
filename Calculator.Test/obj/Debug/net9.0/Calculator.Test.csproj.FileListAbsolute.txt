@@ -136,3 +136,4 @@
 /Users/ninikristesiashvili/Desktop/code/UnitTesting/Calculator.Test/obj/Debug/net9.0/Calculator.Test.pdb
 /Users/ninikristesiashvili/Desktop/code/UnitTesting/Calculator.Test/obj/Debug/net9.0/Calculator.Test.genruntimeconfig.cache
 /Users/ninikristesiashvili/Desktop/code/UnitTesting/Calculator.Test/obj/Debug/net9.0/ref/Calculator.Test.dll
+/Users/ninikristesiashvili/Desktop/code/UnitTesting/Calculator.Test/obj/Debug/net9.0/Calculator.Test.sourcelink.json

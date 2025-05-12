@@ -27,4 +27,49 @@ public class CalculatorTest
         //Assert
         Assert.Equal(2.8m, sum);
     }
+
+    [Fact]
+    public void GetFibonacci_GivenLengthOf3_ReturnsArrayWith3Elements()
+    {
+        //Arrange
+        var calculator = new Calculator();
+        //Act
+        var fibonacci = calculator.GetFibonacci(3);
+        //Assert
+        Assert.Equal(new[] {1,1,2}, fibonacci);
+    }
+
+    [Fact]
+    public void GetFibonacci_NotIncludes0()
+    {
+        //Arrange
+        var calculator = new Calculator();
+        //Act
+        var fibonacci = calculator.GetFibonacci(3);
+        //Assert
+        Assert.All(fibonacci, n=>Assert.NotEqual(0,n));
+    }
+    
+    [Fact]
+    public void GetFibonacci_NotIncludes4()
+    {
+        //Arrange
+        var calculator = new Calculator();
+        //Act
+        var fibonacci = calculator.GetFibonacci(3);
+        //Assert
+        Assert.DoesNotContain(4, fibonacci);
+    }
+    
+    [Fact]
+    public void GetFibonacci_FirstFiveMembersAreCorrect()
+    {
+        //Arrange
+        var calculator = new Calculator();
+        //Act
+        var fibonacci = calculator.GetFibonacci(5);
+        var expected = new[] {1,1,2,3,5};
+        //Assert
+        Assert.Equal(expected, fibonacci);
+    }
 }
