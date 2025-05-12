@@ -1,0 +1,14 @@
+/Users/ninikristesiashvili/Desktop/code/UnitTesting/Calculator/bin/Debug/net9.0/Calculator
+/Users/ninikristesiashvili/Desktop/code/UnitTesting/Calculator/bin/Debug/net9.0/Calculator.deps.json
+/Users/ninikristesiashvili/Desktop/code/UnitTesting/Calculator/bin/Debug/net9.0/Calculator.runtimeconfig.json
+/Users/ninikristesiashvili/Desktop/code/UnitTesting/Calculator/bin/Debug/net9.0/Calculator.dll
+/Users/ninikristesiashvili/Desktop/code/UnitTesting/Calculator/bin/Debug/net9.0/Calculator.pdb
+/Users/ninikristesiashvili/Desktop/code/UnitTesting/Calculator/obj/Debug/net9.0/Calculator.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ninikristesiashvili/Desktop/code/UnitTesting/Calculator/obj/Debug/net9.0/Calculator.AssemblyInfoInputs.cache
+/Users/ninikristesiashvili/Desktop/code/UnitTesting/Calculator/obj/Debug/net9.0/Calculator.AssemblyInfo.cs
+/Users/ninikristesiashvili/Desktop/code/UnitTesting/Calculator/obj/Debug/net9.0/Calculator.csproj.CoreCompileInputs.cache
+/Users/ninikristesiashvili/Desktop/code/UnitTesting/Calculator/obj/Debug/net9.0/Calculator.dll
+/Users/ninikristesiashvili/Desktop/code/UnitTesting/Calculator/obj/Debug/net9.0/refint/Calculator.dll
+/Users/ninikristesiashvili/Desktop/code/UnitTesting/Calculator/obj/Debug/net9.0/Calculator.pdb
+/Users/ninikristesiashvili/Desktop/code/UnitTesting/Calculator/obj/Debug/net9.0/Calculator.genruntimeconfig.cache
+/Users/ninikristesiashvili/Desktop/code/UnitTesting/Calculator/obj/Debug/net9.0/ref/Calculator.dll
