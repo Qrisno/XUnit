@@ -1,4 +1,7 @@
-﻿namespace Calculator.Test;
+﻿using System.Net.Mail;
+using Calculator.Test.TestDataShare;
+
+namespace Calculator.Test;
 
 public class CalculatorFixture
 {
@@ -19,6 +22,40 @@ public class CalculatorTest(ITestOutputHelper outputHelper, CalculatorFixture ca
         //Assert
         Assert.Equal(3, sum);
     }
+    
+    [Theory]
+    [MemberData(nameof(TestDataSharer.ValuesForAddMethod), MemberType = typeof(TestDataSharer))]
+    public void Add_GivenTwoNumbers_ReturnsSum(int a, int b, int expectedSum)
+    {
+        _outputHelper.WriteLine("Executed");
+        //Act
+        var sum = _calculatorFixture.Calc.Add(a, b);
+        //Assert
+        Assert.Equal(expectedSum, sum);
+    }
+
+    [Theory]
+    [InlineData(2)]
+    [InlineData(4)]
+    [InlineData(8)]
+    [InlineData(10)]
+    public void IsEven_GivenEvenNumber_ReturnsTrue(int num)
+    {
+        var isEven = _calculatorFixture.Calc.IsEven(num);
+        Assert.True(isEven);
+    }
+    
+    [Theory]
+    [InlineData(3)]
+    [InlineData(5)]
+    [InlineData(7)]
+    [InlineData(133)]
+    public void IsEven_GivenEvenNumber_ReturnsFalse(int num)
+    {
+        var isEven = _calculatorFixture.Calc.IsEven(num);
+        Assert.False(isEven);
+    }
+
 
     [Fact]
     [Trait("Calculator", "Ops")]

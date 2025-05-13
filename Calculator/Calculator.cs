@@ -27,4 +27,6 @@ public class Calculator
         }
         
     }
+    
+    public bool IsEven(int number)=> number % 2 == 0;
 }
