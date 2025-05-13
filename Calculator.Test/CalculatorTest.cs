@@ -24,7 +24,7 @@ public class CalculatorTest(ITestOutputHelper outputHelper, CalculatorFixture ca
     }
     
     [Theory]
-    [MemberData(nameof(TestDataSharer.ValuesForAddMethod), MemberType = typeof(TestDataSharer))]
+    [AddData]
     public void Add_GivenTwoNumbers_ReturnsSum(int a, int b, int expectedSum)
     {
         _outputHelper.WriteLine("Executed");
