@@ -4,6 +4,7 @@ namespace Calculator;
 
 public class Insurance
 {
+    public int InterestRate { get; set; } = 10;
     public int GetDiscountPercentage(int age)
     {
         switch (age)
